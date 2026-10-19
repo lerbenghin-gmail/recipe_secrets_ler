@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations | Recipe Secrets Restaurant</title>
+  <meta name="description" content="Reserve your table at Recipe Secrets Restaurant." />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand"><span class="brand-icon">🍲</span> Recipe Secrets</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="reservation.html" aria-current="page">Reservation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-small" style="background-image: url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-content">
+        <h1>Reserve Your Table</h1>
+        <p>We hold your favorite seat for your favorite evening.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <form class="form-card" data-validate novalidate>
+          <h2 style="text-align:center; color: var(--color-primary-dark);">Book a Reservation</h2>
+
+          <div class="field">
+            <label for="res-name">Full Name</label>
+            <input type="text" id="res-name" name="name" required />
+            <p class="error-text">Please enter your name.</p>
+          </div>
+
+          <div class="field">
+            <label for="res-email">Email Address</label>
+            <input type="email" id="res-email" name="email" required />
+            <p class="error-text">Please enter a valid email address.</p>
+          </div>
+
+          <div class="field">
+            <label for="res-phone">Phone Number</label>
+            <input type="tel" id="res-phone" name="phone" required />
+            <p class="error-text">Please enter a valid phone number.</p>
+          </div>
+
+          <div class="grid grid-2" style="gap: 1rem;">
+            <div class="field">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" name="date" required />
+              <p class="error-text">Please choose a date.</p>
+            </div>
+            <div class="field">
+              <label for="res-time">Time</label>
+              <input type="time" id="res-time" name="time" required />
+              <p class="error-text">Please choose a time.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="res-guests">Number of Guests</label>
+            <select id="res-guests" name="guests" required>
+              <option value="">Select guest count</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6+">6+ Guests</option>
+            </select>
+            <p class="error-text">Please select a guest count.</p>
+          </div>
+
+          <div class="field">
+            <label for="res-notes">Special Requests (optional)</label>
+            <textarea id="res-notes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Request Reservation</button>
+          </div>
+
+          <p class="form-note">This form does not process payments or guarantee a table instantly — our team will confirm your reservation by phone or email within 24 hours.</p>
+
+          <div class="form-success" role="status">
+            Thank you! Your reservation request has been received. We'll be in touch shortly to confirm.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Recipe Secrets Restaurant</h4>
+          <p>123 Harvest Lane<br />Rivertown, ST 00000</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <p>Tue–Sun: 11:00 AM – 10:00 PM<br />Closed Mondays</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p>
+            <a href="specials.html">Specials</a><br />
+            <a href="reservation.html">Reservations</a><br />
+            <a href="contact.html">Contact Us</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Recipe Secrets Restaurant. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

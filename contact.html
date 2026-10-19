@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Recipe Secrets Restaurant</title>
+  <meta name="description" content="Get in touch with Recipe Secrets Restaurant — location, hours, and contact form." />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand"><span class="brand-icon">🍲</span> Recipe Secrets</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-small" style="background-image: url('https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=1600&q=80');">
+      <div class="hero-content">
+        <h1>Get in Touch</h1>
+        <p>Questions, feedback, or planning a special event? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid grid-2">
+          <div>
+            <h2>Visit or Reach Us</h2>
+            <ul class="info-list">
+              <li>
+                <span class="icon">📍</span>
+                <span><strong>Address</strong><br />123 Harvest Lane, Rivertown, ST 00000</span>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <span><strong>Phone</strong><br /><a href="tel:+15551234567">(555) 123-4567</a></span>
+              </li>
+              <li>
+                <span class="icon">✉️</span>
+                <span><strong>Email</strong><br /><a href="mailto:hello@recipesecrets.example">hello@recipesecrets.example</a></span>
+              </li>
+              <li>
+                <span class="icon">🕒</span>
+                <span><strong>Hours</strong><br />Tue–Sun: 11:00 AM – 10:00 PM, Closed Mondays</span>
+              </li>
+            </ul>
+          </div>
+          <img class="rounded-photo" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Cozy restaurant interior seating area" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <form class="form-card" data-validate novalidate>
+          <h2 style="text-align:center; color: var(--color-primary-dark);">Send Us a Message</h2>
+
+          <div class="field">
+            <label for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" name="name" required />
+            <p class="error-text">Please enter your name.</p>
+          </div>
+
+          <div class="field">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" required />
+            <p class="error-text">Please enter a valid email address.</p>
+          </div>
+
+          <div class="field">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" required />
+            <p class="error-text">Please enter a subject.</p>
+          </div>
+
+          <div class="field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+            <p class="error-text">Please enter a message.</p>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+
+          <p class="form-note">This form runs locally in your browser — there is no backend on this static hosting, so please also reach us by phone or email for time-sensitive matters.</p>
+
+          <div class="form-success" role="status">
+            Thanks for reaching out! We'll get back to you as soon as possible.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Recipe Secrets Restaurant</h4>
+          <p>123 Harvest Lane<br />Rivertown, ST 00000</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <p>Tue–Sun: 11:00 AM – 10:00 PM<br />Closed Mondays</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p>
+            <a href="specials.html">Specials</a><br />
+            <a href="reservation.html">Reservations</a><br />
+            <a href="contact.html">Contact Us</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Recipe Secrets Restaurant. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
